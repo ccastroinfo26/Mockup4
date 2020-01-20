@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".tela5"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/header" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include4"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nomeAdvogado1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Name Surname"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toBottomOf="@id/include4" />
+
+    <TextView
+        android:id="@+id/distancia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/distancia"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado1" />
+
+    <TextView
+        android:id="@+id/txtBacharel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Bacharel em Direito pela USP"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
+
+    <Button
+        android:id="@+id/btnEntrarContato1"
+        style="@style/MyEditTextTheme2"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="top"
+        android:text="Clique aqui para entrar em contato"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBacharel1" />
+
+    <Button
+        android:id="@+id/btnLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/like"
+        android:drawablePadding="3dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="90"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato1" />
+
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/comment"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="78"
+        app:layout_constraintStart_toEndOf="@+id/btnLikes"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato1" />
+
+    <TextView
+        android:id="@+id/txtPremium1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Premium ⭐⭐⭐⭐⭐"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnComment"
+        app:layout_constraintTop_toBottomOf="@+id/txtBacharel1" />
+
+
+    <ImageView
+        android:id="@+id/user_image2"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLikes"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nomeAdvogado2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Name Surname"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toBottomOf="@id/btnLikes" />
+
+    <TextView
+        android:id="@+id/distancia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/distancia"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/user_image2"
+        app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado2" />
+
+    <TextView
+        android:id="@+id/txtBacharel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Bacharel em Direito pela USP"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_image2" />
+
+    <Button
+        android:id="@+id/btnEntrarContato2"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="top"
+        android:text="Clique aqui para entrar em contato"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBacharel2" />
+
+    <Button
+        android:id="@+id/btnLikes2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/like"
+        android:drawablePadding="3dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="90"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato2" />
+
+    <Button
+        android:id="@+id/btnComment2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/comment"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="78"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/btnLikes2"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato2" />
+
+    <TextView
+        android:id="@+id/txtPremiu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Free"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btnComment2"
+        app:layout_constraintTop_toBottomOf="@+id/txtBacharel2" />
+
+
+    <ImageView
+        android:id="@+id/user_image3"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLikes2"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nomeAdvogado3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Name Surname"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/user_image3"
+        app:layout_constraintTop_toBottomOf="@id/btnLikes2" />
+
+    <TextView
+        android:id="@+id/distancia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/distancia"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/user_image3"
+        app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado3" />
+
+    <TextView
+        android:id="@+id/txtBacharel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Bacharel em Direito pela USP"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_image3" />
+
+    <Button
+        android:id="@+id/btnEntrarContato3"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="top"
+        android:text="Clique aqui para entrar em contato"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBacharel3" />
+
+    <Button
+        android:id="@+id/btnLikes3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/like"
+        android:drawablePadding="3dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="90"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato3" />
+
+    <Button
+        android:id="@+id/btnComment3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/comment"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="78"
+        app:layout_constraintStart_toEndOf="@+id/btnLikes3"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato3" />
+
+    <TextView
+        android:id="@+id/txtPremium3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Premium ⭐⭐⭐⭐⭐"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnComment3"
+        app:layout_constraintTop_toBottomOf="@+id/txtBacharel3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        android:background="@color/colorPrimary"
+        app:headerLayout="@layout/nav_header_menu"
+        app:itemTextAppearance="@style/NavigationItemAppearance"
+        app:menu="@menu/activity_menu_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

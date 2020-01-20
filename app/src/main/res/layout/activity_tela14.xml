@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".tela14"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header6"
+            layout="@layout/header" />
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header6"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/nomeAdvogado1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Name Surname"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintTop_toBottomOf="@id/header6" />
+
+        <TextView
+            android:id="@+id/distancia1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/distancia"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado1" />
+
+        <TextView
+            android:id="@+id/txtBacharel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Bacharel em Direito pela USP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_image" />
+
+        <TextView
+            android:id="@+id/textCidade1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Cidade: São Paulo"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBacharel1" />
+
+        <TextView
+            android:id="@+id/textEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="E-mail: johndoe@diligencia.com.br"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCidade1" />
+
+        <TextView
+            android:id="@+id/textFone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Fone/Whatsapp: (11) 98118 - 3769"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEmail1" />
+
+        <TextView
+            android:id="@+id/textAvaliações"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Avaliações"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFone1" />
+
+        <TextView
+            android:id="@+id/textCaso1"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Caso cível - adoção"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAvaliações" />
+
+        <TextView
+            android:id="@+id/textDescript1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Muito atencioso e dedicado, recomendo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCaso1" />
+
+        <TextView
+            android:id="@+id/textNota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:text="⭐⭐⭐⭐⭐"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCaso1" />
+
+
+        <TextView
+            android:id="@+id/textCaso2"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Caso cível - adoção"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDescript1" />
+
+        <TextView
+            android:id="@+id/textDescript2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Muito atencioso e dedicado, recomendo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCaso2" />
+
+        <TextView
+            android:id="@+id/textNota2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:text="⭐⭐⭐⭐⭐"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCaso2" />
+
+
+        <TextView
+            android:id="@+id/textCaso3"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Caso cível - adoção"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDescript2" />
+
+        <TextView
+            android:id="@+id/textDescript3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Muito atencioso e dedicado, recomendo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCaso3" />
+
+        <TextView
+            android:id="@+id/textNota3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:text="⭐⭐⭐⭐⭐"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCaso3" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:text="Cidades Atendidas:"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDescript3" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:text="Campo Bom (RS) , Canoas (RS) , Estância Velha (RS) , Novo Hamburgo (RS) , Portão (RS) , São Leopoldo (RS) , Sapiranga (RS)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        android:background="@color/colorPrimary"
+        app:headerLayout="@layout/nav_header_menu"
+        app:itemTextAppearance="@style/NavigationItemAppearance"
+        app:menu="@menu/activity_menu_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

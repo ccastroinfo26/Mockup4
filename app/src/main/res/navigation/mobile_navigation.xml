@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mockup.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragment_buscar"
+        android:name="com.example.mockup.ui.Buscar.BuscarFragment"
+        android:label="@string/menu_buscarDl"
+        tools:layout="@layout/fragment_buscar" />
+
+    <fragment
+        android:id="@+id/fragment_sobre"
+        android:name="com.example.mockup.ui.Sobre.SobreFragment"
+        android:label="@string/menu_sobre"
+        tools:layout="@layout/fragment_sobre" />
+
+    <fragment
+        android:id="@+id/fragment_minhas"
+        android:name="com.example.mockup.ui.MinhasDiligências.MinhasFragment"
+        android:label="@string/menu_myDl"
+        tools:layout="@layout/fragment_minhas" />
+
+    <fragment
+        android:id="@+id/fragment_terms"
+        android:name="com.example.mockup.ui.Termos.TermosFragment"
+        android:label="@string/menu_terms"
+        tools:layout="@layout/fragment_terms" />
+
+    <fragment
+        android:id="@+id/fragment_exit"
+        android:name="com.example.mockup.ui.Sair.SairFragment"
+        android:label="@string/menu_sair"
+        tools:layout="@layout/fragment_exit" />
+</navigation>

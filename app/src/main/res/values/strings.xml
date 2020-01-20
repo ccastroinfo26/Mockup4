@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">A Diligência</string>
+    <string name="Lipsun">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra ex id lacus porta mattis. Morbi eu ipsum non quam egestas scelerisque id sed elit.</string>
+    <string name="btn1tela">Experimente!</string>
+    <string name="campoEmail">Email</string>
+    <string name="campoSenha">Senha</string>
+    <string name="btnForgotpss">Esqueceu a sua senha?</string>
+    <string name="Entrar">Entrar</string>
+    <string name="mssOutrosAcessos">Ou acesse com:</string>
+    <string name="btnNewUser">Não é cadastrado? <b>Cadastre-se</b></string>
+    <string name="campoToolbar">A Diligência</string>
+    <string name="campoPesquisa">Pesquisar</string>
+    <string name="btnNotify">1</string>
+
+
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="TextoSobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt libero semper, tincidunt urna id, cursus velit. Quisque fringilla, nisi sed mollis mattis, quam turpis pellentesque ipsum, vitae placerat quam sem vitae tortor. Donec auctor augue et risus iaculis tempus. Suspendisse faucibus laoreet mauris, a luctus tellus gravida non. Phasellus metus turpis, congue et semper at, convallis sit amet odio. Vestibulum volutpat tortor ut fringilla vestibulum. Morbi suscipit tortor sit amet turpis fringilla dictum. Integer dignissim placerat tellus, ac efficitur velit lacinia ac. Sed turpis turpis, posuere et ultricies a, molestie id felis. Vivamus lacus libero, scelerisque finibus leo ac, blandit ultrices neque. Pellentesque vel leo nec eros efficitur varius quis vel velit. Nunc scelerisque a dui et varius. Maecenas venenatis metus vulputate elementum tristique.</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_buscarDl">Buscar Diligências</string>
+    <string name="menu_sobre">Sobre</string>
+    <string name="menu_myDl">Minhas Diligências</string>
+    <string name="menu_terms">Termos e Condições</string>
+    <string name="menu_sair">Sair</string>
+    <string name="distancia">@johndoe • está a 9km</string>
+    <string name="avisoTaxa">Taxa relativa ao Plano Premium: 25%(Ver Planos)
+        Importante: A taxa será de no mínimo 50 reais.</string>
+
+
+    <string-array name="tipo_Diligência">
+        <item> Tipo de Diligência</item>
+    </string-array>
+
+    <string-array name="selecionar_estado">
+    <item> Estado</item>
+    </string-array>
+
+    <string-array name="selecionar_cidade">
+    <item> Cidade</item>
+    </string-array>
+</resources>

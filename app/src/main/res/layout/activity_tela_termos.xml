@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".telaTermos"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include3"
+            layout="@layout/header" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="76dp"
+            android:text="@string/menu_terms"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a felis eu enim dignissim porttitor. Donec lobortis euismod sem, at vehicula ante consequat id. Etiam volutpat ante sodales neque laoreet pretium. Nulla sed dolor nec nisi efficitur mattis. Donec placerat feugiat ex id blandit. Curabitur dui magna, fringilla at ipsum vitae, mollis congue ex. Praesent placerat, mauris vitae faucibus faucibus, tellus lectus placerat diam, sit amet posuere felis magna eu nulla. Cras lobortis congue erat et ultrices. Phasellus tempor arcu non massa pellentesque gravida. Aenean a pharetra metus. Proin fringilla ante a lorem molestie, sed scelerisque purus pretium. Fusce dapibus sed eros eget laoreet. Etiam ullamcorper varius ante. Pellentesque mollis nisi risus, sed facilisis felis gravida id. Donec tortor lectus, commodo vitae euismod ut, tristique ut lacus.  Phasellus nec placerat ipsum. Proin semper purus id turpis feugiat, a efficitur ante tempor. Quisque volutpat ex vel porta aliquam. Suspendisse ultrices, nunc in venenatis aliquet, felis arcu tempor lectus, non eleifend leo enim ultrices nibh. Praesent hendrerit, tortor eget consequat malesuada, purus sapien efficitur lacus, vel cursus libero enim eget justo. Nullam varius nulla nec justo cursus pharetra. Sed a luctus leo, eget luctus dolor. Nunc gravida, risus ut accumsan vestibulum, magna neque rhoncus nisi, non posuere mauris nibh sit amet ipsum. Pellentesque id lorem nulla. Cras sit amet vestibulum justo. Quisque at orci lacinia, convallis nibh at, maximus ligula.  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vitae blandit risus. Aliquam felis urna, porttitor sed lacus et, tincidunt porta sem. Mauris egestas eros sed lorem vestibulum, vitae cursus mauris egestas. Quisque sed augue quis erat ornare fringilla. Sed ac velit imperdiet, ultricies nisi eget, dapibus risus. Suspendisse ullamcorper lobortis commodo.  "
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        android:background="@color/colorPrimary"
+        app:headerLayout="@layout/nav_header_menu"
+        app:itemTextAppearance="@style/NavigationItemAppearance"
+        app:menu="@menu/activity_menu_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

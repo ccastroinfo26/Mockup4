@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mockup">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_rounded"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".cadastrar" />
+        <activity android:name=".tela17" />
+        <activity android:name=".tela16" />
+        <activity android:name=".tela15" />
+        <activity android:name=".tela14" />
+        <activity android:name=".tela11" />
+        <activity android:name=".tela10" />
+        <activity android:name=".tela9" />
+        <activity android:name=".tela8" />
+        <activity android:name=".tela7" />
+        <activity android:name=".tela6" />
+        <activity
+            android:name=".menu"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".telaTermos" />
+        <activity android:name=".TelaSobre" />
+        <activity android:name=".tela5" />
+        <activity android:name=".telaComMapa" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

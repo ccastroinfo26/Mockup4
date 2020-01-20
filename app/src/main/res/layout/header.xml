@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#B22222"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="60dp"
+        app:titleTextColor="@android:color/white"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A Diligência"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:paddingRight="10sp"
+            app:srcCompat="@drawable/bell" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:drawableStart="@drawable/search"
+            android:ems="10"
+            android:hint="@string/campoPesquisa"
+            android:inputType="text"
+            android:textColor="@color/branco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/transparent"
+            app:layout_constraintStart_toEndOf="@id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+            app:srcCompat="@drawable/configs" />
+    </LinearLayout>
+
+</LinearLayout>
