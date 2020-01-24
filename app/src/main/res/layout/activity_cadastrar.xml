@@ -8,7 +8,7 @@
     tools:context=".cadastrar">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/LogoDiligência"
         android:layout_width="290dp"
         android:layout_height="150dp"
         android:layout_marginStart="60dp"
@@ -19,6 +19,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logodiligencia" />
 
+    <TextView
+        android:id="@+id/txtCadastre-se"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="125dp"
+        android:text="@string/txt_cadastre_se"
+        android:textAllCaps="true"
+        android:textColor="@color/branco"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoDiligência" />
+
     <EditText
         android:id="@+id/criarUser"
         android:layout_width="0dp"
@@ -27,13 +42,13 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="95dp"
         android:ems="10"
-        android:hint="Nome"
+        android:hint="@string/campoNome"
         android:inputType="textPersonName"
         android:textColor="@color/branco"
         android:textColorHint="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCadastre-se" />
 
     <EditText
         android:id="@+id/criarEmail"
@@ -43,7 +58,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="95dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/campoEmail"
         android:inputType="textEmailAddress"
         android:textColor="@color/branco"
         android:textColorHint="@color/branco"
@@ -59,7 +74,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="95dp"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="@string/campoSenha"
         android:inputType="textPassword"
         android:textColor="@color/branco"
         android:textColorHint="@color/branco"
@@ -75,7 +90,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="95dp"
         android:ems="10"
-        android:hint="Confirme a senha"
+        android:hint="@string/campo_confirme_a_senha"
         android:inputType="textPassword"
         android:textColor="@color/branco"
         android:textColorHint="@color/branco"
@@ -92,25 +107,12 @@
         android:layout_marginEnd="145dp"
         android:background="@drawable/formato_botao"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Cadastrar"
+        android:text="@string/btn_cadastrar"
         android:textColor="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirmarSenha" />
 
-    <TextView
-        android:id="@+id/textView41"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="125dp"
-        android:text="Cadastre-se"
-        android:textAllCaps="true"
-        android:textColor="@color/branco"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

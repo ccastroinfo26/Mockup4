@@ -21,16 +21,16 @@
 
     <include
         layout="@layout/header"
-        android:id="@+id/header6"/>
+        android:id="@+id/header"/>
 
     <ImageView
-        android:id="@+id/user_image"
+        android:id="@+id/imgUser"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header6"
+        app:layout_constraintTop_toBottomOf="@id/header"
         app:srcCompat="@drawable/user" />
 
     <TextView
@@ -39,11 +39,11 @@
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Name Surname"
+        android:text="@string/nome_advogado"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
-        app:layout_constraintTop_toBottomOf="@id/header6" />
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
     <TextView
         android:id="@+id/distancia1"
@@ -53,7 +53,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/distancia"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
         app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado1" />
 
     <TextView
@@ -61,11 +61,11 @@
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:text="Premium ⭐⭐⭐⭐⭐"
+        android:text="@string/txt_premium"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_image" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
     <TextView
     android:id="@+id/text1"
@@ -74,21 +74,20 @@
     android:layout_marginStart="25dp"
     android:layout_marginTop="10dp"
     android:layout_marginEnd="35dp"
-    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat lacus odio, quis malesuada elit euismod et"
+    android:text="@string/txtTela7"
     android:textColor="#000000"
     android:textSize="12sp"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+    app:layout_constraintTop_toBottomOf="@+id/txtPrazoDiligencia" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtPrazoDiligencia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
-        android:text="2 dias para a execução da Diligência"
+        android:text="@string/txt_prazo_execucao_dl"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPremium1" />
@@ -99,21 +98,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="R$ 249,00"
+        android:text="@string/txt_valor_diligencia"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnAceitarProposta"
         android:layout_width="270dp"
         android:layout_height="35dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/formato_botao"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:text="Aceitar a Proposta"
+        android:text="@string/btn_aceitar_a_proposta"
         android:textAllCaps="false"
         android:textColor="@color/branco"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,13 +120,13 @@
 
 
     <ImageView
-        android:id="@+id/user_image2"
+        android:id="@+id/imgUser2"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button1"
+        app:layout_constraintTop_toBottomOf="@id/btnAceitarProposta"
         app:srcCompat="@drawable/user" />
 
     <TextView
@@ -136,11 +135,11 @@
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Name Surname"
+        android:text="@string/nome_advogado"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
-        app:layout_constraintTop_toBottomOf="@id/button1" />
+        app:layout_constraintStart_toEndOf="@+id/imgUser2"
+        app:layout_constraintTop_toBottomOf="@id/btnAceitarProposta" />
 
     <TextView
         android:id="@+id/distancia2"
@@ -150,7 +149,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/distancia"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image2"
+        app:layout_constraintStart_toEndOf="@+id/imgUser2"
         app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado2" />
 
     <TextView
@@ -158,11 +157,11 @@
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:text="Premium ⭐⭐⭐⭐⭐"
+        android:text="@string/txt_premium"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_image2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUser2" />
 
     <TextView
         android:id="@+id/text2"
@@ -171,21 +170,20 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="35dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat lacus odio, quis malesuada elit euismod et"
+        android:text="@string/txtTela7"
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPrazoDiligencia2" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtPrazoDiligencia2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
-        android:text="2 dias para a execução da Diligência"
+        android:text="@string/txt_prazo_execucao_dl"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPremium2" />
@@ -196,21 +194,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="R$ 249,00"
+        android:text="@string/txt_valor_diligencia"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnAceitarProposta2"
         android:layout_width="270dp"
         android:layout_height="35dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/formato_botao"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:text="Aceitar a Proposta"
+        android:text="@string/btn_aceitar_a_proposta"
         android:textAllCaps="false"
         android:textColor="@color/branco"
         app:layout_constraintStart_toStartOf="parent"
@@ -218,13 +216,13 @@
 
 
     <ImageView
-        android:id="@+id/user_image3"
+        android:id="@+id/imgUser3"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/btnAceitarProposta2"
         app:srcCompat="@drawable/user" />
 
     <TextView
@@ -233,11 +231,11 @@
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Name Surname"
+        android:text="@string/nome_advogado"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
-        app:layout_constraintTop_toBottomOf="@id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/imgUser3"
+        app:layout_constraintTop_toBottomOf="@id/btnAceitarProposta2" />
 
     <TextView
         android:id="@+id/distancia3"
@@ -247,7 +245,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/distancia"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image3"
+        app:layout_constraintStart_toEndOf="@+id/imgUser3"
         app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado3" />
 
     <TextView
@@ -255,11 +253,11 @@
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:text="Premium ⭐⭐⭐⭐⭐"
+        android:text="@string/txt_premium"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_image3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUser3" />
 
     <TextView
         android:id="@+id/text3"
@@ -268,21 +266,20 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="35dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat lacus odio, quis malesuada elit euismod et"
+        android:text="@string/txtTela7"
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPrazoDiligencia3" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtPrazoDiligencia3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
-        android:text="2 dias para a execução da Diligência"
+        android:text="@string/txt_prazo_execucao_dl"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPremium3" />
@@ -293,7 +290,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="R$ 249,00"
+        android:text="@string/txt_valor_diligencia"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -307,7 +304,7 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/formato_botao"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:text="Aceitar a Proposta"
+        android:text="@string/btn_aceitar_a_proposta"
         android:textAllCaps="false"
         android:textColor="@color/branco"
         app:layout_constraintStart_toStartOf="parent"
@@ -324,7 +321,7 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start|left"
+        android:layout_gravity="start"
         android:background="@color/colorPrimary"
         app:headerLayout="@layout/nav_header_menu"
         app:itemTextAppearance="@style/NavigationItemAppearance"

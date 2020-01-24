@@ -13,41 +13,42 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/include6"
+            android:id="@+id/includeToolbar"
             layout="@layout/header" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btnDlAtendo"
             android:layout_width="205dp"
             android:layout_height="35dp"
             android:background="@android:color/darker_gray"
-            android:text="Diligências que Atendo"
+            android:text="@string/txt_btnDiligenciasAtendo"
             android:textAllCaps="false"
+            android:clickable="true"
             android:textColor="@color/branco"
-            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintEnd_toStartOf="@+id/btnDlContrato"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/include6" />
+            app:layout_constraintTop_toBottomOf="@+id/includeToolbar" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/btnDlContrato"
             android:layout_width="205dp"
             android:layout_height="35dp"
             android:background="@color/colorPrimary"
-            android:text="Diligências que Contrato"
+            android:text="@string/txt_btnDiligenciasContrato"
             android:textAllCaps="false"
             android:textColor="@color/branco"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button6"
-            app:layout_constraintTop_toBottomOf="@+id/include6" />
+            app:layout_constraintStart_toEndOf="@+id/btnDlAtendo"
+            app:layout_constraintTop_toBottomOf="@+id/includeToolbar" />
 
         <ImageView
-            android:id="@+id/user_image"
+            android:id="@+id/imgUser"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button7"
+            app:layout_constraintTop_toBottomOf="@id/btnDlContrato"
             app:srcCompat="@drawable/user" />
 
         <TextView
@@ -56,11 +57,11 @@
             android:layout_height="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Name Surname"
+            android:text="@string/nome_advogado"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
-            app:layout_constraintTop_toBottomOf="@id/button7" />
+            app:layout_constraintStart_toEndOf="@+id/imgUser"
+            app:layout_constraintTop_toBottomOf="@id/btnDlContrato" />
 
         <TextView
             android:id="@+id/distancia1"
@@ -70,7 +71,7 @@
             android:layout_marginTop="5dp"
             android:text="@string/distancia"
             android:textColor="@color/colorPrimary"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintStart_toEndOf="@+id/imgUser"
             app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado1" />
 
         <TextView
@@ -79,11 +80,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Acompanhamentos em São Paulo - SP"
+            android:text="@string/txt_acompanhamento"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/user_image" />
+            app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
         <Button
             android:id="@+id/btnEntrarContato1"
@@ -95,7 +96,7 @@
             android:background="@color/transparent"
             android:clickable="true"
             android:gravity="top"
-            android:text="Clique aqui para alterar a Diligência"
+            android:text="@string/txt_btn_alterar_diligencia"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +124,7 @@
             android:background="@drawable/formato_botao"
             android:backgroundTint="@android:color/holo_green_dark"
             android:clickable="true"
-            android:text="Aceitar uma Proposta"
+            android:text="@string/txt_btn_aceitar_proposta"
             android:textAllCaps="false"
             android:textColor="@color/branco"
             app:layout_constraintEnd_toEndOf="parent"
@@ -132,7 +133,7 @@
 
 
         <ImageView
-            android:id="@+id/user_image2"
+            android:id="@+id/imgUser2"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:layout_marginStart="15dp"
@@ -147,10 +148,10 @@
             android:layout_height="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Name Surname"
+            android:text="@string/nome_advogado"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintStart_toEndOf="@+id/imgUser2"
             app:layout_constraintTop_toBottomOf="@id/btnEnviarProposta1" />
 
         <TextView
@@ -161,7 +162,7 @@
             android:layout_marginTop="5dp"
             android:text="@string/distancia"
             android:textColor="@color/colorPrimary"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintStart_toEndOf="@+id/imgUser2"
             app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado2" />
 
         <TextView
@@ -170,11 +171,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Cartórios em São Paulo - SP"
+            android:text="@string/txt_cartorios_sp"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/user_image2" />
+            app:layout_constraintTop_toBottomOf="@+id/imgUser2" />
 
         <Button
             android:id="@+id/btnEntrarContato2"
@@ -186,7 +187,7 @@
             android:background="@color/transparent"
             android:clickable="true"
             android:gravity="top"
-            android:text="Clique aqui para encerrar Diligência"
+            android:text="@string/txt_btn_encerrar_diligencia"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
@@ -214,7 +215,7 @@
             android:background="@drawable/formato_botao"
             android:backgroundTint="@color/colorPrimary"
             android:clickable="true"
-            android:text="Em Andamento"
+            android:text="@string/txt_btn_em_andamento"
             android:textAllCaps="false"
             android:textColor="@color/branco"
             app:layout_constraintEnd_toEndOf="parent"
@@ -223,7 +224,7 @@
 
 
         <ImageView
-            android:id="@+id/user_image3"
+            android:id="@+id/imgUser3"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:layout_marginStart="15dp"
@@ -238,10 +239,10 @@
             android:layout_height="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Name Surname"
+            android:text="@string/nome_advogado"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintStart_toEndOf="@+id/imgUser3"
             app:layout_constraintTop_toBottomOf="@id/btnEnviarProposta2" />
 
         <TextView
@@ -252,7 +253,7 @@
             android:layout_marginTop="5dp"
             android:text="@string/distancia"
             android:textColor="@color/colorPrimary"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintStart_toEndOf="@+id/imgUser3"
             app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado3" />
 
         <TextView
@@ -261,11 +262,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
-            android:text="Prepostos em São Paulo - SP"
+            android:text="@string/txt_prepostos_em_sp"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/user_image3" />
+            app:layout_constraintTop_toBottomOf="@+id/imgUser3" />
 
         <Button
             android:id="@+id/btnEntrarContato3"
@@ -277,7 +278,7 @@
             android:background="@color/transparent"
             android:clickable="true"
             android:gravity="top"
-            android:text="Clique aqui para avaliar o Advogado"
+            android:text="@string/txt_btn_avaliar_advogado"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
@@ -304,7 +305,7 @@
             android:layout_marginEnd="10dp"
             android:background="@drawable/formato_botao"
             android:backgroundTint="@android:color/darker_gray"
-            android:text="Encerrado"
+            android:text="@string/txt_btn_encerrado"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"

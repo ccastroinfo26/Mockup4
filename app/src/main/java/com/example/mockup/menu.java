@@ -8,6 +8,7 @@ import com.example.mockup.ui.MinhasDiligências.MinhasFragment;
 import com.example.mockup.ui.Sair.SairFragment;
 import com.example.mockup.ui.Sobre.SobreFragment;
 import com.example.mockup.ui.Termos.TermosFragment;
+import com.example.mockup.ui.home.HomeFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -15,8 +16,10 @@ import android.view.MenuItem;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -29,6 +32,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
 
 public class menu extends AppCompatActivity {
 
@@ -41,7 +45,6 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -64,6 +67,14 @@ public class menu extends AppCompatActivity {
         return true;
     }
 
+   // @Override
+    //public boolean onOptionsItemSelected(MenuItem item) {
+
+        //if(drawer.onOptionsItemSelected(item))
+          //  return true;
+
+        //return super.onOptionsItemSelected(item);
+    //}
 
     @Override
     public boolean onSupportNavigateUp() {

@@ -1,47 +1,145 @@
 <resources>
+
+    //Telas iniciais
     <string name="app_name">A Diligência</string>
     <string name="Lipsun">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra ex id lacus porta mattis. Morbi eu ipsum non quam egestas scelerisque id sed elit.</string>
-    <string name="btn1tela">Experimente!</string>
     <string name="campoEmail">Email</string>
     <string name="campoSenha">Senha</string>
-    <string name="btnForgotpss">Esqueceu a sua senha?</string>
     <string name="Entrar">Entrar</string>
-    <string name="mssOutrosAcessos">Ou acesse com:</string>
-    <string name="btnNewUser">Não é cadastrado? <b>Cadastre-se</b></string>
+    <string name="txtOutrosAcessos">Ou acesse com:</string>
+    <string name="txt_cadastre_se">Cadastre-se</string>
+    <string name="campoNome">Nome</string>
+    <string name="campo_confirme_a_senha">Confirme a senha</string>
+
+
+    //Toolbar
     <string name="campoToolbar">A Diligência</string>
     <string name="campoPesquisa">Pesquisar</string>
-    <string name="btnNotify">1</string>
+
+    //Textos grandes
+    <string name="txt_terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a felis eu enim dignissim porttitor. Donec lobortis euismod sem, at vehicula ante consequat id. Etiam volutpat ante sodales neque laoreet pretium. Nulla sed dolor nec nisi efficitur mattis. Donec placerat feugiat ex id blandit. Curabitur dui magna, fringilla at ipsum vitae, mollis congue ex. Praesent placerat, mauris vitae faucibus faucibus, tellus lectus placerat diam, sit amet posuere felis magna eu nulla. Cras lobortis congue erat et ultrices. Phasellus tempor arcu non massa pellentesque gravida. Aenean a pharetra metus. Proin fringilla ante a lorem molestie, sed scelerisque purus pretium. Fusce dapibus sed eros eget laoreet. Etiam ullamcorper varius ante. Pellentesque mollis nisi risus, sed facilisis felis gravida id. Donec tortor lectus, commodo vitae euismod ut, tristique ut lacus. Phasellus nec placerat ipsum. Proin semper purus id turpis feugiat, a efficitur ante tempor. Quisque volutpat ex vel porta aliquam. Suspendisse ultrices, nunc in venenatis aliquet, felis arcu tempor lectus, non eleifend leo enim ultrices nibh. Praesent hendrerit, tortor eget consequat malesuada, purus sapien efficitur lacus, vel cursus libero enim eget justo. Nullam varius nulla nec justo cursus pharetra. Sed a luctus leo, eget luctus dolor. Nunc gravida, risus ut accumsan vestibulum, magna neque rhoncus nisi, non posuere mauris nibh sit amet ipsum. Pellentesque id lorem nulla. Cras sit amet vestibulum justo. Quisque at orci lacinia, convallis nibh at, maximus ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vitae blandit risus. Aliquam felis urna, porttitor sed lacus et, tincidunt porta sem. Mauris egestas eros sed lorem vestibulum, vitae cursus mauris egestas. Quisque sed augue quis erat ornare fringilla. Sed ac velit imperdiet, ultricies nisi eget, dapibus risus. Suspendisse ullamcorper lobortis commodo.</string>
+    <string name="TextoSobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt libero semper, tincidunt urna id, cursus velit. Quisque fringilla, nisi sed mollis mattis, quam turpis pellentesque ipsum, vitae placerat quam sem vitae tortor. Donec auctor augue et risus iaculis tempus. Suspendisse faucibus laoreet mauris, a luctus tellus gravida non. Phasellus metus turpis, congue et semper at, convallis sit amet odio. Vestibulum volutpat tortor ut fringilla vestibulum. Morbi suscipit tortor sit amet turpis fringilla dictum. Integer dignissim placerat tellus, ac efficitur velit lacinia ac. Sed turpis turpis, posuere et ultricies a, molestie id felis. Vivamus lacus libero, scelerisque finibus leo ac, blandit ultrices neque. Pellentesque vel leo nec eros efficitur varius quis vel velit. Nunc scelerisque a dui et varius. Maecenas venenatis metus vulputate elementum tristique.</string>
+    <string name="txtTela7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat lacus odio, quis malesuada elit euismod et</string>
 
 
+    //Botões
+    <string name="btn1tela">Experimente!</string>
+    <string name="btnForgotpss">Esqueceu a sua senha?</string>
+    <string name="btnNewUser">Não é cadastrado? <b>Cadastre-se</b></string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="txt_btnDiligenciasAtendo">Diligências que Atendo</string>
+    <string name="txt_btnDiligenciasContrato">Diligências que Contrato</string>
+    <string name="txt_btn_alterar_diligencia">Clique aqui para alterar a Diligência</string>
+    <string name="txt_btn_encerrar_diligencia">Clique aqui para encerrar Diligência</string>
+    <string name="txt_btn_avaliar_advogado">Clique aqui para avaliar o Advogado</string>
+    <string name="txt_btn_entrar_contato">Clique aqui para entrar em contato</string>
+    <string name="txt_btn_aceitar_proposta">Aceitar uma Proposta</string>
+    <string name="txt_btn_em_andamento">Em Andamento</string>
+    <string name="txt_btn_encerrado">Encerrado</string>
+    <string name="txt_btn_melhorar_proposta">Melhorar Proposta</string>
+    <string name="txt_btn_comment">78</string>
+    <string name="txt_btn_likes">90</string>
+    <string name="btn_enviar_proposta">Enviar proposta</string>
+    <string name="txt_btn_publique">Publique a sua Diligência</string>
+    <string name="txt_btn_editar_foto">Inserir/editar Foto</string>
+    <string name="txt_btn_pague_agora">Pague agora</string>
+    <string name="txt_btn_pagar_cartao">Pagamento com cartão de crédito</string>
+    <string name="txt_btn_escolher_cartao">Clique aqui para escolher um cartão cadastrado</string>
+    <string name="btn_aceitar_a_proposta">Aceitar a Proposta</string>
+
+    //Nav Header
     <string name="title_activity_menu">Menu</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">John Doe</string>
+    <string name="nav_header_subtitle">San Francisco, CA</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="TextoSobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt libero semper, tincidunt urna id, cursus velit. Quisque fringilla, nisi sed mollis mattis, quam turpis pellentesque ipsum, vitae placerat quam sem vitae tortor. Donec auctor augue et risus iaculis tempus. Suspendisse faucibus laoreet mauris, a luctus tellus gravida non. Phasellus metus turpis, congue et semper at, convallis sit amet odio. Vestibulum volutpat tortor ut fringilla vestibulum. Morbi suscipit tortor sit amet turpis fringilla dictum. Integer dignissim placerat tellus, ac efficitur velit lacinia ac. Sed turpis turpis, posuere et ultricies a, molestie id felis. Vivamus lacus libero, scelerisque finibus leo ac, blandit ultrices neque. Pellentesque vel leo nec eros efficitur varius quis vel velit. Nunc scelerisque a dui et varius. Maecenas venenatis metus vulputate elementum tristique.</string>
 
+
+    //Textos menu
     <string name="menu_home">Home</string>
     <string name="menu_buscarDl">Buscar Diligências</string>
     <string name="menu_sobre">Sobre</string>
     <string name="menu_myDl">Minhas Diligências</string>
     <string name="menu_terms">Termos e Condições</string>
     <string name="menu_sair">Sair</string>
+
+
+    //Textos gerais
+    <string name="nome_advogado">Name Surname</string>
     <string name="distancia">@johndoe • está a 9km</string>
+    <string name="txt_acompanhamento">Acompanhamentos em São Paulo - SP</string>
+    <string name="txt_cartorios_sp">Cartórios em São Paulo - SP</string>
+    <string name="txt_prepostos_em_sp">Preposto em São Paulo - SP</string>
+    <string name="txt_contratante">Contratante</string>
+    <string name="txt_bacharel">Bacharel em Direito pela USP</string>
+    <string name="txt_premium">Premium ⭐⭐⭐⭐⭐</string>
+    <string name="txt_free">Free</string>
+    <string name="txt_sua_oferta">Sua oferta</string>
+    <string name="txt_oferta_final">Oferta final</string>
+    <string name="txt_detalhes">Detalhes</string>
+    <string name="txt_prazo">Duração estimada</string>
+    <string name="txt_moeda">R$</string>
+    <string name="txt_dias">Dias</string>
+    <string name="txt_advogado">Advogado</string>
+    <string name="txt_john_doe">John Doe</string>
+
+    //TEXTOS EDITAR CONTA
+    <string name="txt_editar_dados">Editar dados</string>
+    <string name="txt_nome_completo">Nome Completo:</string>
+    <string name="txt_email">E-mail:</string>
+    <string name="txt_oab">OAB:</string>
+    <string name="txt_endereco">Endereço:</string>
+    <string name="txt_cidades_atendidas">Cidades Atendidas:</string>
+    <string name="txt_plano_assinatura">Plano assinatura</string>
+    <string name="txt_checkbox_premium">Premium</string>
+    <string name="txt_assine">Assine A Diligência, e tenha acesso a recursos exclusivos, apenas:</string>
+    <string name="txt_valor_assinatura">R$ 49.00 mensais</string>
     <string name="avisoTaxa">Taxa relativa ao Plano Premium: 25%(Ver Planos)
         Importante: A taxa será de no mínimo 50 reais.</string>
 
 
-    <string-array name="tipo_Diligência">
+    //TEXTOS SOBRE ADVOGADO
+    <string name="txt_cidade_sp">Cidade: São Paulo</string>
+    <string name="txt_email_john_doe">E-mail: johndoe@diligencia.com.br</string>
+    <string name="txt_telefone_john_doe">Fone/Whatsapp: (11) 98118 - 3769</string>
+    <string name="txt_avaliacoes">Avaliações</string>
+    <string name="txt_caso_civel">Caso cível - adoção</string>
+    <string name="txt_qualidades">Muito atencioso e dedicado, recomendo</string>
+    <string name="txt_nota_stars">⭐⭐⭐⭐⭐</string>
+    <string name="txt_cidades_detalhadas">Campo Bom (RS) , Canoas (RS) , Estância Velha (RS) , Novo Hamburgo (RS) , Portão (RS) , São Leopoldo (RS) , Sapiranga (RS)</string>
+
+
+    //Array para spinners
+    <string-array name="tipo_Diligencia">
         <item> Tipo de Diligência</item>
     </string-array>
-
     <string-array name="selecionar_estado">
-    <item> Estado</item>
+        <item> Estado</item>
+    </string-array>
+    <string-array name="selecionar_cidade">
+        <item> Cidade</item>
     </string-array>
 
-    <string-array name="selecionar_cidade">
-    <item> Cidade</item>
-    </string-array>
+
+    <string name="title_activity_tela_inicial">Map</string>
+
+
+    //TEXTOS CARTÃO
+    <string name="txt_numero_card">Número do Cartão</string>
+    <string name="txt_ex_num_card">1234 5678 3456 2456</string>
+    <string name="txt_data_validade">Data de Validade</string>
+    <string name="txt_ex_data_validade">05 / 21</string>
+    <string name="txt_cvv">CVV</string>
+    <string name="txt_ex_cvv">123</string>
+    <string name="txt_nome_no_cartao">Nome escrito no cartão</string>
+    <string name="txt_salvar_card">Salvar cartão</string>
+    <string name="txt_advogado_escolhido">Advogado Escolhido</string>
+
+    <string name="txt_valor_diligencia">R$249,00</string>
+    <string name="txt_prazo_execucao_dl">2 dias para a execução da Diligência</string>
+    <string name="title_activity_maps">Map</string>
+
+
 </resources>

@@ -15,17 +15,17 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/header6"
+            android:id="@+id/header"
             layout="@layout/header" />
 
         <ImageView
-            android:id="@+id/user_image"
+            android:id="@+id/imgUser"
             android:layout_width="50dp"
             android:layout_height="0dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/header6"
+            app:layout_constraintTop_toBottomOf="@id/header"
             app:srcCompat="@drawable/user" />
 
         <TextView
@@ -34,11 +34,11 @@
             android:layout_height="0dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Name Surname"
+            android:text="@string/nome_advogado"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
-            app:layout_constraintTop_toBottomOf="@id/header6" />
+            app:layout_constraintStart_toEndOf="@+id/imgUser"
+            app:layout_constraintTop_toBottomOf="@id/header" />
 
         <TextView
             android:id="@+id/distancia1"
@@ -48,7 +48,7 @@
             android:layout_marginTop="5dp"
             android:text="@string/distancia"
             android:textColor="@color/colorPrimary"
-            app:layout_constraintStart_toEndOf="@+id/user_image"
+            app:layout_constraintStart_toEndOf="@+id/imgUser"
             app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado1" />
 
         <TextView
@@ -57,12 +57,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="Bacharel em Direito pela USP"
+            android:text="@string/txt_bacharel"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/user_image" />
+            app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
         <TextView
             android:id="@+id/textCidade1"
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="Cidade: São Paulo"
+            android:text="@string/txt_cidade_sp"
             android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtBacharel1" />
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="E-mail: johndoe@diligencia.com.br"
+            android:text="@string/txt_email_john_doe"
             android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textCidade1" />
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="Fone/Whatsapp: (11) 98118 - 3769"
+            android:text="@string/txt_telefone_john_doe"
             android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textEmail1" />
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
-            android:text="Avaliações"
+            android:text="@string/txt_avaliacoes"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -116,7 +116,7 @@
             android:layout_height="16dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="5dp"
-            android:text="Caso cível - adoção"
+            android:text="@string/txt_caso_civel"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="Muito atencioso e dedicado, recomendo"
+            android:text="@string/txt_qualidades"
             android:textColor="@color/colorPrimary"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="50dp"
-            android:text="⭐⭐⭐⭐⭐"
+            android:text="@string/txt_nota_stars"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textCaso1" />
@@ -152,7 +152,7 @@
             android:layout_height="16dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="5dp"
-            android:text="Caso cível - adoção"
+            android:text="@string/txt_caso_civel"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="Muito atencioso e dedicado, recomendo"
+            android:text="@string/txt_qualidades"
             android:textColor="@color/colorPrimary"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -176,7 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="50dp"
-            android:text="⭐⭐⭐⭐⭐"
+            android:text="@string/txt_nota_stars"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textCaso2" />
@@ -188,7 +188,7 @@
             android:layout_height="16dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="5dp"
-            android:text="Caso cível - adoção"
+            android:text="@string/txt_caso_civel"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -200,7 +200,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:text="Muito atencioso e dedicado, recomendo"
+            android:text="@string/txt_qualidades"
             android:textColor="@color/colorPrimary"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -212,18 +212,18 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="50dp"
-            android:text="⭐⭐⭐⭐⭐"
+            android:text="@string/txt_nota_stars"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textCaso3" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/txtCidadesAtendidas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="40dp"
-            android:text="Cidades Atendidas:"
+            android:text="@string/txt_cidades_atendidas"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -236,12 +236,12 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="25dp"
-            android:text="Campo Bom (RS) , Canoas (RS) , Estância Velha (RS) , Novo Hamburgo (RS) , Portão (RS) , São Leopoldo (RS) , Sapiranga (RS)"
+            android:text="@string/txt_cidades_detalhadas"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+            app:layout_constraintTop_toBottomOf="@+id/txtCidadesAtendidas" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -250,7 +250,7 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start|left"
+        android:layout_gravity="start"
         android:background="@color/colorPrimary"
         app:headerLayout="@layout/nav_header_menu"
         app:itemTextAppearance="@style/NavigationItemAppearance"

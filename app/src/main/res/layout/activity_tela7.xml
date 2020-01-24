@@ -16,86 +16,86 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             tools:context=".tela7">
 
 
             <include
-                android:id="@+id/include5"
+                android:id="@+id/includeToolbar"
                 layout="@layout/header" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/txtAcompanhamentos"
                 android:layout_width="275dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="70dp"
-                android:text="Acompanhamentos em São Paulo - SP"
+                android:text="@string/txt_acompanhamento"
                 android:textAlignment="viewStart"
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/include5" />
+                app:layout_constraintTop_toBottomOf="@+id/includeToolbar" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/txtDescricaoEnviarProposta"
                 android:layout_width="275dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="55dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat lacus odio, quis malesuada elit euismod et"
+                android:text="@string/txtTela7"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/txtAcompanhamentos" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/txtContratante"
                 android:layout_width="70dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="68dp"
                 android:layout_marginTop="36dp"
-                android:text="Contratante"
+                android:text="@string/txt_contratante"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/txtDescricaoEnviarProposta" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imgUser"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="68dp"
                 android:src="@drawable/user"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toBottomOf="@+id/txtContratante" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/txtNomeAdvogado"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Name Surname"
+                android:text="@string/nome_advogado"
                 android:textColor="@color/colorPrimary"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintStart_toEndOf="@+id/imgUser"
+                app:layout_constraintTop_toBottomOf="@+id/txtContratante" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/txtDistancia"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/distancia"
                 android:textColor="@color/colorPrimary"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                app:layout_constraintStart_toEndOf="@+id/imgUser"
+                app:layout_constraintTop_toBottomOf="@+id/txtNomeAdvogado" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/txtTaxa"
                 android:layout_width="275dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="68dp"
@@ -111,10 +111,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/etValorAtual"
                 android:layout_width="210dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="46dp"
@@ -124,10 +124,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/button3"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                app:layout_constraintTop_toBottomOf="@+id/txtTaxa" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/etNovoValor"
                 android:layout_width="210dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="36dp"
@@ -135,11 +135,11 @@
                 android:ems="10"
                 android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button4"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintStart_toEndOf="@+id/moeda2"
+                app:layout_constraintTop_toBottomOf="@+id/etValorAtual" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/etDuracaoDias"
                 style="@style/Widget.AppCompat.EditText"
                 android:layout_width="210dp"
                 android:layout_height="48dp"
@@ -148,10 +148,10 @@
                 android:inputType="number"
                 android:textAlignment="textEnd"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                app:layout_constraintTop_toBottomOf="@+id/txtPrazo" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/etDetalhes"
                 android:layout_width="265dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="74dp"
@@ -162,11 +162,11 @@
                 android:inputType="textMultiLine"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/textView18"
-                app:layout_constraintTop_toBottomOf="@+id/editText4" />
+                app:layout_constraintStart_toEndOf="@+id/txtDetalhes"
+                app:layout_constraintTop_toBottomOf="@+id/etDuracaoDias" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnEnviarProposta"
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="110dp"
@@ -175,100 +175,100 @@
                 android:layout_marginBottom="70dp"
                 android:background="@drawable/buttonnotify"
                 android:clickable="true"
-                android:text="Enviar proposta"
+                android:text="@string/btn_enviar_proposta"
                 android:textAllCaps="false"
                 android:textColor="@color/branco"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+                app:layout_constraintTop_toBottomOf="@+id/etDetalhes" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/txtSuaOferta"
                 android:layout_width="wrap_content"
                 android:layout_height="16dp"
                 android:layout_marginStart="74dp"
                 android:layout_marginTop="30dp"
-                android:text="Sua oferta"
+                android:text="@string/txt_sua_oferta"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                app:layout_constraintTop_toBottomOf="@id/txtTaxa" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/txtOfertaFinal"
                 android:layout_width="60dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="74dp"
                 android:layout_marginTop="20dp"
-                android:text="Oferta final"
+                android:text="@string/txt_oferta_final"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button3" />
+                app:layout_constraintTop_toBottomOf="@+id/moeda" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/txtDetalhes"
                 android:layout_width="wrap_content"
                 android:layout_height="16dp"
                 android:layout_marginStart="74dp"
                 android:layout_marginTop="20dp"
-                android:text="Detalhes"
+                android:text="@string/txt_detalhes"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText4" />
+                app:layout_constraintTop_toBottomOf="@+id/etDuracaoDias" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/txtPrazo"
                 android:layout_width="100dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="74dp"
                 android:layout_marginTop="20dp"
-                android:text="Duração estimada"
+                android:text="@string/txt_prazo"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                app:layout_constraintTop_toBottomOf="@+id/etNovoValor" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/moeda"
                 android:layout_width="55dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="74dp"
                 android:background="@android:color/darker_gray"
-                android:text="R$"
+                android:text="@string/txt_moeda"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+                app:layout_constraintTop_toBottomOf="@+id/txtSuaOferta" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/moeda2"
                 android:layout_width="55dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="74dp"
                 android:background="@android:color/darker_gray"
-                android:text="R$"
+                android:text="@string/txt_moeda"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+                app:layout_constraintTop_toBottomOf="@+id/txtOfertaFinal" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/dias"
                 android:layout_width="55dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="36dp"
                 android:layout_marginEnd="74dp"
                 android:background="@android:color/darker_gray"
-                android:text="Dias"
+                android:text="@string/txt_dias"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editText4"
-                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                app:layout_constraintStart_toEndOf="@+id/etDuracaoDias"
+                app:layout_constraintTop_toBottomOf="@+id/etNovoValor" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -278,7 +278,7 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start|left"
+        android:layout_gravity="start"
         android:background="@color/colorPrimary"
         app:headerLayout="@layout/nav_header_menu"
         app:itemTextAppearance="@style/NavigationItemAppearance"

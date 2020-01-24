@@ -14,7 +14,7 @@ public class criaBanco extends SQLiteOpenHelper {
     private static final int VERSAO = 3;
 
     public criaBanco(Context context) {
-        super(context, NOME_BANCO,null, VERSAO);
+        super(context, NOME_BANCO, null, VERSAO);
     }
 
     @Override

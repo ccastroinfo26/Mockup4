@@ -30,12 +30,11 @@
                 android:background="@color/colorPrimaryDark"
                 android:gravity="top|center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/header">
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/imgUser"
                     android:layout_width="128dp"
                     android:layout_height="128dp"
                     android:layout_marginStart="150dp"
@@ -47,37 +46,37 @@
                     app:srcCompat="@drawable/user" />
 
                 <TextView
-                    android:id="@+id/textView27"
+                    android:id="@+id/txtAdvogado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="176dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="176dp"
                     android:layout_weight="1"
-                    android:text="Advogado"
+                    android:text="@string/txt_advogado"
                     android:textColor="@color/branco"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                    app:layout_constraintTop_toBottomOf="@+id/txtNomeAdvogado" />
 
                 <TextView
-                    android:id="@+id/textView28"
+                    android:id="@+id/txtNomeAdvogado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="176dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="176dp"
-                    android:text="John Doe"
+                    android:text="@string/txt_john_doe"
                     android:textColor="@color/branco"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                    app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/btnEditarFoto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
@@ -85,17 +84,17 @@
                     android:layout_marginEnd="120dp"
                     android:background="@drawable/formato_botao"
                     android:backgroundTint="@color/colorPrimary"
-                    android:text="Inserir/editar Foto"
+                    android:text="@string/txt_btn_editar_foto"
                     android:textAllCaps="false"
                     android:textColor="@color/branco"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                    app:layout_constraintTop_toBottomOf="@+id/txtAdvogado" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/textView31"
+                android:id="@+id/txtEditarDados"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="20dp"
@@ -104,27 +103,28 @@
                 android:background="@android:color/darker_gray"
                 android:gravity="center|start"
                 android:paddingStart="30dp"
-                android:text="Editar Dados"
+                android:text="@string/txt_editar_dados"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/txtNomeCompleto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Nome Completo:"
+                android:text="@string/txt_nome_completo"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+                app:layout_constraintTop_toBottomOf="@+id/txtEditarDados" />
 
             <EditText
-                android:id="@+id/editText14"
+                android:id="@+id/etNomeCompleto"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
@@ -134,21 +134,21 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+                app:layout_constraintTop_toBottomOf="@+id/txtNomeCompleto" />
 
             <TextView
-                android:id="@+id/textView33"
+                android:id="@+id/txtEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
-                android:text="E-mail:"
+                android:text="@string/txt_email"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText14" />
+                app:layout_constraintTop_toBottomOf="@+id/etNomeCompleto" />
 
             <EditText
-                android:id="@+id/editText15"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
@@ -157,23 +157,22 @@
                 android:ems="10"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/txtOAB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
-                android:text="OAB:"
+                android:text="@string/txt_oab"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText15" />
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
             <EditText
-                android:id="@+id/editText16"
+                android:id="@+id/etOAB"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
@@ -183,21 +182,21 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+                app:layout_constraintTop_toBottomOf="@+id/txtOAB" />
 
             <TextView
-                android:id="@+id/textView35"
+                android:id="@+id/txtEndereco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Endereço:"
+                android:text="@string/txt_endereco"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText16" />
+                app:layout_constraintTop_toBottomOf="@+id/etOAB" />
 
             <EditText
-                android:id="@+id/editText18"
+                android:id="@+id/etEndereco"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
@@ -207,10 +206,10 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+                app:layout_constraintTop_toBottomOf="@+id/txtEndereco" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/spinnerCidade"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
@@ -219,10 +218,10 @@
                 android:entries="@array/selecionar_cidade"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText18" />
+                app:layout_constraintTop_toBottomOf="@+id/etEndereco" />
 
             <Spinner
-                android:id="@+id/spinner3"
+                android:id="@+id/spinnerEstado"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
@@ -231,10 +230,10 @@
                 android:entries="@array/selecionar_estado"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+                app:layout_constraintTop_toBottomOf="@+id/spinnerCidade" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/txtPlanoAssinatura"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginStart="20dp"
@@ -243,63 +242,63 @@
                 android:background="@android:color/darker_gray"
                 android:gravity="center|start"
                 android:paddingStart="30dp"
-                android:text="Plano assinatura"
+                android:text="@string/txt_plano_assinatura"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+                app:layout_constraintTop_toBottomOf="@+id/spinnerEstado" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxFree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="20dp"
-                android:text="Free"
+                android:text="@string/txt_free"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/txtPlanoAssinatura" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxPremium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="60dp"
-                android:text="Premium"
+                android:text="@string/txt_checkbox_premium"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-            <EditText
-                android:id="@+id/editText17"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+                app:layout_constraintTop_toBottomOf="@+id/txtPlanoAssinatura" />
 
             <TextView
-                android:id="@+id/textView36"
+                android:id="@+id/txtCidades"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Cidades Atendidas:"
+                android:text="@string/txt_cidades_atendidas"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxPremium" />
+
+            <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCidades" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -308,7 +307,7 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start|left"
+        android:layout_gravity="start"
         android:background="@color/colorPrimary"
         app:headerLayout="@layout/nav_header_menu"
         app:itemTextAppearance="@style/NavigationItemAppearance"

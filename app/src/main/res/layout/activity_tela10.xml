@@ -20,78 +20,78 @@
             tools:context=".tela10">
 
             <include
-                android:id="@+id/include5"
+                android:id="@+id/includeToolbar"
                 layout="@layout/header" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/txtAcompanhamentos"
                 android:layout_width="275dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="70dp"
-                android:text="Acompanhamentos em São Paulo - SP"
+                android:text="@string/txt_acompanhamento"
                 android:textAlignment="viewStart"
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/include5" />
+                app:layout_constraintTop_toBottomOf="@+id/includeToolbar" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/txtDescricaoEnviarProposta"
                 android:layout_width="275dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="55dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat lacus odio, quis malesuada elit euismod et"
+                android:text="@string/txtTela7"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/txtAcompanhamentos" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/txtAdvogadoEscolhido"
                 android:layout_width="120dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="68dp"
                 android:layout_marginTop="36dp"
-                android:text="Advogado Escolhido"
+                android:text="@string/txt_advogado_escolhido"
                 android:textColor="#000000"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/txtDescricaoEnviarProposta" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imgUser"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="68dp"
                 android:src="@drawable/user"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toBottomOf="@+id/txtAdvogadoEscolhido" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/txtNomeAdvogado"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Name Surname"
+                android:text="@string/nome_advogado"
                 android:textColor="@color/colorPrimary"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintStart_toEndOf="@+id/imgUser"
+                app:layout_constraintTop_toBottomOf="@+id/txtAdvogadoEscolhido" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/txtJohnDoe"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/distancia"
                 android:textColor="@color/colorPrimary"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                app:layout_constraintStart_toEndOf="@+id/imgUser"
+                app:layout_constraintTop_toBottomOf="@+id/txtNomeAdvogado" />
 
             <TextView
                 android:id="@+id/txtPremium1"
@@ -99,194 +99,194 @@
                 android:layout_height="24dp"
                 android:layout_marginStart="68dp"
                 android:layout_marginTop="5dp"
-                android:text="Premium ⭐⭐⭐⭐⭐"
+                android:text="@string/txt_premium"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btnPagarCartao"
                 android:layout_width="364dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
                 android:background="@android:color/darker_gray"
-                android:text="Pagamento com cartão de crédito"
+                android:text="@string/txt_btn_pagar_cartao"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtPremium1" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btnEscolherCartao"
                 android:layout_width="360dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:background="@color/transparent"
-                android:text="Clique aqui para escolher um cartão cadastrado"
+                android:text="@string/txt_btn_escolher_cartao"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button8" />
+                app:layout_constraintTop_toBottomOf="@+id/btnPagarCartao" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/txtValorDiligencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="134dp"
                 android:layout_marginTop="20dp"
-                android:text="R$249,00"
+                android:text="@string/txt_valor_diligencia"
                 android:textColor="@color/colorPrimary"
                 android:textSize="36sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button9" />
+                app:layout_constraintTop_toBottomOf="@+id/btnEscolherCartao" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imgCartao"
                 android:layout_width="77dp"
                 android:layout_height="53dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/txtValorDiligencia"
                 app:srcCompat="@drawable/visa" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/txtNumeroCartao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Número do Cartão"
+                android:text="@string/txt_numero_card"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textIsSelectable="false"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                app:layout_constraintTop_toBottomOf="@+id/imgCartao" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/etNumCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:ems="10"
                 android:inputType="number"
-                android:text="1234   5678   3456   2456"
+                android:text="@string/txt_ex_num_card"
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintTop_toBottomOf="@+id/txtNumeroCartao" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/txtDataValidade"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Data de Validade"
+                android:text="@string/txt_data_validade"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText6" />
+                app:layout_constraintTop_toBottomOf="@+id/etNumCard" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/etDataValidade"
                 android:layout_width="120dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:ems="10"
                 android:inputType="date"
-                android:text="05  /  21"
+                android:text="@string/txt_ex_data_validade"
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+                app:layout_constraintTop_toBottomOf="@+id/txtDataValidade" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/txtCVV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="75dp"
                 android:layout_marginTop="20dp"
-                android:text="CVV"
+                android:text="@string/txt_cvv"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/textView19"
-                app:layout_constraintTop_toBottomOf="@+id/editText6" />
+                app:layout_constraintStart_toEndOf="@+id/txtDataValidade"
+                app:layout_constraintTop_toBottomOf="@+id/etNumCard" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/etCVV"
                 android:layout_width="53dp"
                 android:layout_height="49dp"
                 android:layout_marginStart="85dp"
                 android:layout_marginTop="5dp"
                 android:ems="10"
                 android:inputType="number"
-                android:text="123"
+                android:text="@string/txt_ex_cvv"
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
-                app:layout_constraintStart_toEndOf="@+id/editText8"
-                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                app:layout_constraintStart_toEndOf="@+id/etDataValidade"
+                app:layout_constraintTop_toBottomOf="@+id/txtCVV" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/txtNomeCartao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Nome escrito no cartão"
+                android:text="@string/txt_nome_no_cartao"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+                app:layout_constraintTop_toBottomOf="@+id/etDataValidade" />
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/etNomeCartao"
                 android:layout_width="213dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="John  Doe"
+                android:text="@string/txt_john_doe"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                app:layout_constraintTop_toBottomOf="@+id/txtNomeCartao" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxSalvarCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Salvar cartão"
+                android:text="@string/txt_salvar_card"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText10" />
+                app:layout_constraintTop_toBottomOf="@+id/etNomeCartao" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/btnPagueAgora"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="26dp"
                 android:background="@color/colorPrimary"
                 android:clickable="true"
-                android:text="Pague agora"
+                android:text="@string/txt_btn_pague_agora"
                 android:textAllCaps="false"
                 android:textColor="@color/branco"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxSalvarCard" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -296,7 +296,7 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start|left"
+        android:layout_gravity="start"
         android:background="@color/colorPrimary"
         app:headerLayout="@layout/nav_header_menu"
         app:itemTextAppearance="@style/NavigationItemAppearance"

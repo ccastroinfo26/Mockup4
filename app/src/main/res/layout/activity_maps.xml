@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".TelaInicial"
+    tools:context=".MapsActivity"
     tools:openDrawer="start">
 
     <LinearLayout
@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <include
-            android:id="@+id/include"
+            android:id="@+id/includeToolbar"
             layout="@layout/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".TelaInicial" />
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView

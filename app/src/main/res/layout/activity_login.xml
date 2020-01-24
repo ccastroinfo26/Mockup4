@@ -8,7 +8,7 @@
     tools:context=".Login">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/LogoDiligência"
         android:layout_width="330dp"
         android:layout_height="170dp"
         android:layout_marginStart="45dp"
@@ -38,7 +38,7 @@
         android:theme="@style/MyEditTextTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/LogoDiligência" />
 
     <EditText
         android:id="@+id/etSenhaLog"
@@ -99,13 +99,13 @@
         app:layout_constraintTop_toBottomOf="@+id/botaoForgotPss" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtOutroAcesso"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="140dp"
-        android:text="@string/mssOutrosAcessos"
+        android:text="@string/txtOutrosAcessos"
         android:textColor="@color/branco"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,9 +124,8 @@
         android:onClick="buttonLogFB"
         app:layout_constraintEnd_toStartOf="@+id/botaoLogGoogle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtOutroAcesso"
         app:srcCompat="@drawable/facebook" />
-
 
     <ImageButton
         android:id="@+id/botaoLogGoogle"
@@ -140,7 +139,7 @@
         android:onClick="buttonLogG"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/botaoLogFB"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtOutroAcesso"
         app:srcCompat="@drawable/googleplus" />
 
     <Button

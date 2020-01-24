@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
     <include
-        android:id="@+id/include4"
+        android:id="@+id/includeToolbar"
         layout="@layout/header" />
 
     <Button
@@ -23,16 +23,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:text="Publique a sua Diligência"
+        android:text="@string/txt_btn_publique"
         android:textAllCaps="false"
         android:textColor="@color/branco"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include4" />
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbar" />
 
     <ImageView
-        android:id="@+id/user_image"
+        android:id="@+id/imgUser"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
@@ -47,10 +47,10 @@
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Name Surname"
+        android:text="@string/nome_advogado"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
         app:layout_constraintTop_toBottomOf="@id/btnTelaPublicar" />
 
     <TextView
@@ -61,7 +61,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/distancia"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
         app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado1" />
 
     <TextView
@@ -70,11 +70,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Acompanhamentos em São Paulo - SP"
+        android:text="@string/txt_acompanhamento"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_image" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUser" />
 
     <Button
         android:id="@+id/btnEntrarContato1"
@@ -86,7 +86,7 @@
         android:background="@color/transparent"
         android:clickable="true"
         android:gravity="top"
-        android:text="Clique aqui para entrar em contato"
+        android:text="@string/txt_btn_entrar_contato"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,7 +101,7 @@
         android:drawableLeft="@drawable/comment"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="78"
+        android:text="@string/txt_btn_comment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato1" />
 
@@ -114,7 +114,7 @@
         android:background="@drawable/formato_botao"
         android:backgroundTint="@color/colorPrimary"
         android:clickable="true"
-        android:text="Enviar Proposta"
+        android:text="@string/btn_enviar_proposta"
         android:textColor="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnComment1"
@@ -122,7 +122,7 @@
 
 
     <ImageView
-        android:id="@+id/user_image2"
+        android:id="@+id/imgUser2"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
@@ -137,10 +137,10 @@
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Name Surname"
+        android:text="@string/nome_advogado"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser2"
         app:layout_constraintTop_toBottomOf="@id/btnEnviarProposta1" />
 
     <TextView
@@ -151,7 +151,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/distancia"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser2"
         app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado2" />
 
     <TextView
@@ -160,11 +160,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Cartórios em São Paulo - SP"
+        android:text="@string/txt_cartorios_sp"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_image2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUser2" />
 
     <Button
         android:id="@+id/btnEntrarContato2"
@@ -176,7 +176,7 @@
         android:background="@color/transparent"
         android:clickable="true"
         android:gravity="top"
-        android:text="Clique aqui para entrar em contato"
+        android:text="@string/txt_btn_entrar_contato"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
@@ -191,7 +191,7 @@
         android:drawableLeft="@drawable/comment"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="78"
+        android:text="@string/txt_btn_comment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato2" />
 
@@ -204,7 +204,7 @@
         android:background="@drawable/formato_botao"
         android:backgroundTint="@color/colorPrimary"
         android:clickable="true"
-        android:text="Enviar Proposta"
+        android:text="@string/btn_enviar_proposta"
         android:textColor="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnComment2"
@@ -212,7 +212,7 @@
 
 
     <ImageView
-        android:id="@+id/user_image3"
+        android:id="@+id/imgUser3"
         android:layout_width="50dp"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
@@ -227,10 +227,10 @@
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Name Surname"
+        android:text="@string/nome_advogado"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser3"
         app:layout_constraintTop_toBottomOf="@id/btnEnviarProposta2" />
 
     <TextView
@@ -241,7 +241,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/distancia"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/imgUser3"
         app:layout_constraintTop_toBottomOf="@+id/nomeAdvogado3" />
 
     <TextView
@@ -250,11 +250,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="Prepostos em São Paulo - SP"
+        android:text="@string/txt_prepostos_em_sp"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_image3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUser3" />
 
     <Button
         android:id="@+id/btnEntrarContato3"
@@ -266,7 +266,7 @@
         android:background="@color/transparent"
         android:clickable="true"
         android:gravity="top"
-        android:text="Clique aqui para entrar em contato"
+        android:text="@string/txt_btn_entrar_contato"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
@@ -281,7 +281,7 @@
         android:drawableLeft="@drawable/comment"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="78"
+        android:text="@string/txt_btn_comment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrarContato3" />
 
@@ -294,7 +294,7 @@
         android:background="@drawable/formato_botao"
         android:backgroundTint="@color/colorPrimary"
         android:clickable="true"
-        android:text="Enviar Proposta"
+        android:text="@string/btn_enviar_proposta"
         android:textColor="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnComment3"
@@ -306,7 +306,7 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start|left"
+        android:layout_gravity="start"
         android:background="@color/colorPrimary"
         app:headerLayout="@layout/nav_header_menu"
         app:itemTextAppearance="@style/NavigationItemAppearance"

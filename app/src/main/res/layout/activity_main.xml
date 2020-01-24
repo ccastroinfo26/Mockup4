@@ -20,10 +20,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/LogoDiligência" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/LogoDiligência"
         android:layout_width="328dp"
         android:layout_height="291dp"
         android:layout_marginStart="41dp"
