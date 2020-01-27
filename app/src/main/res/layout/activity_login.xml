@@ -69,6 +69,7 @@
         android:layout_marginEnd="45dp"
         android:background="@android:color/transparent"
         android:clickable="true"
+        android:onClick="botaoForgotPss"
         android:text="@string/btnForgotpss"
         android:textAllCaps="false"
         android:textColor="@color/branco"

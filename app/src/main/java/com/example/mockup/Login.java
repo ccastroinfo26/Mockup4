@@ -17,6 +17,11 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
+    public void botaoForgotPss (View view){
+        Intent intent = new Intent(this, CEP.class);
+        startActivity(intent);
+    }
+
     public void botaoLogIN(View view) {
         EditText email = findViewById(R.id.etEmailLog);
         EditText senha = findViewById(R.id.etSenhaLog);
