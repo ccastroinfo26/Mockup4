@@ -22,7 +22,7 @@
         android:roundIcon="@drawable/icon_rounded"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".CEP"></activity>
+        <activity android:name=".CEPActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

@@ -1,3 +1,5 @@
+package com.example.mockup.model;
+
 public class CEP {
     private String cep;
     private String logradouro;

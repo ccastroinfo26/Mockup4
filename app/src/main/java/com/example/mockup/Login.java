@@ -18,7 +18,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void botaoForgotPss (View view){
-        Intent intent = new Intent(this, CEP.class);
+        Intent intent = new Intent(this, CEPActivity.class);
         startActivity(intent);
     }
 
