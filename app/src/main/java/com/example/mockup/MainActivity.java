@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
+
+    public void button2(View view)
+    {
+        Intent intent = new Intent (this, testesDeApi.class);
+        startActivity(intent);
+    }
 }

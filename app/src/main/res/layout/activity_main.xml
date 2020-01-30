@@ -51,4 +51,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/testeAPI"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:background="@drawable/formato_botao"
+        android:clickable="true"
+        android:onClick="button2"
+        android:text="@string/btn1tela" />
 </androidx.constraintlayout.widget.ConstraintLayout>

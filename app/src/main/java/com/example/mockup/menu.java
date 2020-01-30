@@ -1,25 +1,9 @@
 package com.example.mockup;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.mockup.ui.Buscar.BuscarFragment;
-import com.example.mockup.ui.MinhasDiligências.MinhasFragment;
-import com.example.mockup.ui.Sair.SairFragment;
-import com.example.mockup.ui.Sobre.SobreFragment;
-import com.example.mockup.ui.Termos.TermosFragment;
-import com.example.mockup.ui.home.HomeFragment;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.MenuItem;
-import android.view.View;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
-import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -32,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.Toast;
 
 public class menu extends AppCompatActivity {
 
@@ -51,8 +34,8 @@ public class menu extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.fragment_buscar, R.id.fragment_sobre,
-                R.id.fragment_minhas, R.id.fragment_terms, R.id.fragment_exit)
+                R.id.nav_home, R.id.nav_buscar, R.id.nav_sobre,
+                R.id.nav_my, R.id.nav_terms, R.id.nav_exit)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -66,15 +49,6 @@ public class menu extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
-
-   // @Override
-    //public boolean onOptionsItemSelected(MenuItem item) {
-
-        //if(drawer.onOptionsItemSelected(item))
-          //  return true;
-
-        //return super.onOptionsItemSelected(item);
-    //}
 
     @Override
     public boolean onSupportNavigateUp() {
